@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -11,8 +14,16 @@ interface TeamType {
 }
 
 const TeamCard: React.FC<TeamType> = ({ teamData }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     return (
-        <div className=" group cursor-pointer">
+        <div data-aos="zoom-in-up" className=" group cursor-pointer">
             <figure className="rounded-3xl bg-[#f5faff] h-96 overflow-hidden">
                 <Image className="w-full h-full" src={teamData.imageUrl} height={850} width={450} alt={teamData.name} />
             </figure>

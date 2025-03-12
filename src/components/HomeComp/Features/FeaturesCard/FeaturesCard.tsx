@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 
 interface FeaturesType {
@@ -10,8 +13,16 @@ interface FeaturesType {
 }
 
 const FeaturesCard: React.FC<FeaturesType> = ({ featuresCard }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     return (
-        <div className="p-4 bg-white border cursor-pointer">
+        <div data-aos="zoom-in-up" className="p-4 bg-white border cursor-pointer">
             <div className="flex justify-center items-center">
                 <figure className="bg-[#edf4ff] p-4 rounded-full">
                     <Image className="h-10 w-10" src={featuresCard.iconUrl} alt="Icon" height={200} width={200} />

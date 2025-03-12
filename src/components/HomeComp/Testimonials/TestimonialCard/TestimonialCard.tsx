@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
@@ -12,9 +15,16 @@ interface TestimonialType {
 }
 
 const TestimonialCard: React.FC<TestimonialType> = ({ testimonialCard }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
 
     return (
-        <div className="p-4 rounded-3xl bg-[#f5faff]">
+        <div data-aos="zoom-in-up" className="p-4 rounded-3xl bg-[#f5faff]">
             <div className="flex gap-4 items-center">
                 <figure className="h-12 w-12 rounded-full">
                     <Image className="w-full h-full" src={testimonialCard.imageUrl} alt={testimonialCard.name} height={100} width={100} />

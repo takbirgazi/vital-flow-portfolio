@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -11,8 +14,16 @@ interface ServiceType {
 }
 
 const ServiceCard: React.FC<ServiceType> = ({ serviceCard }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     return (
-        <div className="p-4 rounded-3xl bg-[#f5faff] group cursor-pointer">
+        <div data-aos="zoom-in-up" className="p-4 rounded-3xl bg-[#f5faff] group cursor-pointer">
             <div className="flex justify-center items-center">
                 <figure className="bg-[#edf4ff] p-4 rounded-full">
                     <Image className="h-10 w-10" src={serviceCard.iconUrl} alt="Icon" height={200} width={200} />

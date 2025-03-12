@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import CustomButton from "@/components/SharedComponent/CustomButton/CustomButton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
@@ -6,9 +9,16 @@ import { FaPlay } from "react-icons/fa";
 
 
 const Hero = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
 
     return (
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-10">
+        <div data-aos="zoom-in-up" className="flex flex-col lg:flex-row justify-between items-center pb-10">
             <div className="w-full lg:w-1/2 flex flex-col gap-8">
                 <div className="flex gap-4">
                     <div className="flex gap-0.5">

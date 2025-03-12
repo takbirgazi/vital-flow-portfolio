@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import CustomButton from "@/components/SharedComponent/CustomButton/CustomButton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
@@ -5,8 +8,16 @@ import Link from "next/link";
 
 
 const WhyUs = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     return (
-        <div className="px-4 flex flex-col lg:flex-row gap-4 justify-between my-5 pb-16">
+        <div data-aos="zoom-in-up" className="px-4 flex flex-col lg:flex-row gap-4 justify-between my-5 pb-16">
             <div className="w-full lg:w-1/2">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

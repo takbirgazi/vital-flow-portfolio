@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
@@ -13,9 +16,16 @@ interface BlogType {
 }
 
 const BlogCard: React.FC<BlogType> = ({ blogCard }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
 
     return (
-        <div className="group flex flex-col justify-between">
+        <div data-aos="zoom-in-up" className="group flex flex-col justify-between">
             <div>
                 <figure className="w-full h-80 overflow-hidden rounded-2xl">
                     <Image className="w-full h-full group-hover:scale-110 object-cover transition-all duration-700" height={750} width={950} src={blogCard.imageUrl} alt={blogCard.title} />

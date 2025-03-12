@@ -1,6 +1,17 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import QuestionsAccordion from "./QuestionsAccordion/QuestionsAccordion";
 
 const Questions = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     const qusetionAns = [
         {
             id: 1,
@@ -29,7 +40,7 @@ const Questions = () => {
         }
     ]
     return (
-        <div className="pb-5">
+        <div data-aos="zoom-in-up" className="pb-5">
             <div className="flex flex-col justify-center items-center">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

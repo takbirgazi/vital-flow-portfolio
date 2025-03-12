@@ -1,3 +1,6 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import Image from "next/image";
 
 interface WorkType {
@@ -10,9 +13,16 @@ interface WorkType {
 }
 
 const WorksCard: React.FC<WorkType> = ({ workCard }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
 
     return (
-        <div className="cursor-pointer">
+        <div data-aos="zoom-in-up" className="cursor-pointer">
             <div>
                 <div className="flex py-5">
                     <p className="bg-primaryBg rounded-full h-7 w-7 text-white font-semibold flex justify-center items-center">
