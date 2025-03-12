@@ -1,0 +1,67 @@
+import TestimonialCard from "./TestimonialCard/TestimonialCard";
+
+
+const Testimonials = () => {
+    const testimonialData = [
+        {
+            id: 1,
+            imageUrl: "https://framerusercontent.com/images/2D6XtXtVf2ZPpchW6wNLcqq9Zc.webp",
+            name: "Emily Johnson",
+            desc: "Their service was outstanding. They ensured I was comfortable and informed every step of the way.",
+            reviewStar: 5,
+        },
+        {
+            id: 2,
+            imageUrl: "https://framerusercontent.com/images/OSg5NrirhnZIfnqszjqlMPbQsg.svg",
+            name: "Michael Roberts",
+            desc: "The support I received was excellent. They truly cared about my needs and exceeded my expectations.",
+            reviewStar: 5,
+        },
+        {
+            id: 3,
+            imageUrl: "https://framerusercontent.com/images/2m6Vf3e8eE5i2wfOrSvAT78ctmI.webp",
+            name: "Achieve your vision",
+            desc: "Experience seamless results as we bring your perfect vision to life with precision and care.",
+            reviewStar: 5,
+        },
+        {
+            id: 4,
+            imageUrl: "https://framerusercontent.com/images/0ko6NgdhqGj0qbhzn4Aq5k20K8.webp",
+            name: "Olivia Harris",
+            desc: "They were attentive and thorough. Their professionalism and kindness made the entire process seamless.",
+            reviewStar: 5,
+        },
+        {
+            id: 5,
+            imageUrl: "https://framerusercontent.com/images/ISS0EEHdkUjhAYoYmhKS3GAD0yE.webp",
+            name: "James Anderson",
+            desc: "My experience was remarkable. They delivered exactly what they promised with care and dedication.",
+            reviewStar: 5,
+        },
+        {
+            id: 6,
+            imageUrl: "https://framerusercontent.com/images/2aBRvSse0zJnzpuCOdsM4CUcy0.webp",
+            name: "Daniel Thompson",
+            desc: "Their team was exceptional. They listened to my concerns and made sure all my needs were addressed.",
+            reviewStar: 5,
+        }
+    ]
+    return (
+        <div>
+            <div className="flex flex-col justify-center items-center">
+                <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
+                    <p className="font-semibold text-gray-800">Testimonials</p>
+                </div>
+                <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[450px] py-5">What our satisfied and happy clients have to say</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
+                {
+                    testimonialData.map(testimonial => <TestimonialCard key={testimonial.id} testimonialCard={testimonial} />)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Testimonials;
