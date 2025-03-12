@@ -40,8 +40,8 @@ const Questions = () => {
         }
     ]
     return (
-        <div data-aos="zoom-in-up" className="pb-5">
-            <div className="flex flex-col justify-center items-center">
+        <div className="pb-5">
+            <div data-aos="fade-up" className="flex flex-col justify-center items-center">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">FAQ&lsquo;s</p>

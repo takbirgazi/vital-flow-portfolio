@@ -1,6 +1,17 @@
+"use client"
+import AOS from 'aos';
+import { useEffect } from "react";
 import TeamCard from "./TeamCard/TeamCard";
 
 const Team = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, [])
+
     const teamData = [
         {
             id: 1,
@@ -42,7 +53,7 @@ const Team = () => {
 
     return (
         <div>
-            <div className="flex flex-col justify-center items-center mb-5">
+            <div data-aos="fade-up" className="flex flex-col justify-center items-center mb-5">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Team</p>

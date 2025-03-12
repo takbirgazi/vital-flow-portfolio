@@ -17,7 +17,7 @@ const QuestionsAccordion: React.FC<AccordionType> = ({ questionAnsData }) => {
     return (
         <Accordion type="multiple" className="w-full">
             {
-                questionAnsData.map(questionAns => <AccordionItem key={questionAns.id} value={`item-${questionAns.id}`}>
+                questionAnsData.map(questionAns => <AccordionItem data-aos="fade-up" key={questionAns.id} value={`item-${questionAns.id}`}>
                     <AccordionTrigger>{questionAns.question}</AccordionTrigger>
                     <AccordionContent>{questionAns.answer}</AccordionContent>
                 </AccordionItem>)
