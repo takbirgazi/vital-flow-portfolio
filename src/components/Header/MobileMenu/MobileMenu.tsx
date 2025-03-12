@@ -21,7 +21,7 @@ const MobileMenu: React.FC<MenuType> = ({ links }) => {
             </div>
             <div className={`${isActive ? "h-56" : "h-0"} md:hidden flex flex-col justify-center gap-5 absolute w-full left-0 top-[73px] bg-white transition-all duration-500 overflow-hidden`}>
                 {
-                    links.map(menu => <Link className="font-bold text-gray-800 text-center" href="/" key={menu.id}>{menu.title}</Link>)
+                    links.map(menu => <Link className="font-bold text-gray-800 text-center" href={menu.slag} key={menu.id}>{menu.title}</Link>)
                 }
             </div>
         </div>
