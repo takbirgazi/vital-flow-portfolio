@@ -3,6 +3,7 @@ import AOS from 'aos';
 import { useEffect } from "react";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
+import Link from 'next/link';
 
 interface ServiceType {
     serviceCard: {
@@ -23,10 +24,10 @@ const ServiceCard: React.FC<ServiceType> = ({ serviceCard }) => {
     }, [])
 
     return (
-        <div data-aos="zoom-in-up" className="p-4 rounded-3xl bg-[#f5faff] group cursor-pointer">
+        <Link href={`/services/${serviceCard.id}`} data-aos="zoom-in-up" className="p-4 rounded-3xl bg-[#f5faff] group cursor-pointer">
             <div className="flex justify-center items-center">
-                <figure className="bg-[#edf4ff] p-4 rounded-full">
-                    <Image className="h-10 w-10" src={serviceCard.iconUrl} alt="Icon" height={200} width={200} />
+                <figure className="bg-[#edf4ff] h-14 w-14 p-2.5 rounded-full">
+                    <Image className="h-full w-full" src={serviceCard.iconUrl} alt={serviceCard.title} height={100} width={100} />
                 </figure>
             </div>
             <div className="pt-5">
@@ -39,7 +40,7 @@ const ServiceCard: React.FC<ServiceType> = ({ serviceCard }) => {
                 <p className="text-gray-800 font-semibold text-center">View Services</p>
                 <FaArrowRight />
             </div>
-        </div>
+        </Link>
     );
 };
 

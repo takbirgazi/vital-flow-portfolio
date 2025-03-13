@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
+import Link from 'next/link';
 
 interface BlogType {
     blogCard: {
@@ -25,7 +26,7 @@ const BlogCard: React.FC<BlogType> = ({ blogCard }) => {
     }, [])
 
     return (
-        <div data-aos="zoom-in-up" className="group flex flex-col justify-between">
+        <Link href={`/blog/${blogCard.id}`} data-aos="zoom-in-up" className="group flex flex-col justify-between">
             <div>
                 <figure className="w-full h-80 overflow-hidden rounded-2xl">
                     <Image className="w-full h-full group-hover:scale-110 object-cover transition-all duration-700" height={750} width={950} src={blogCard.imageUrl} alt={blogCard.title} />
@@ -42,7 +43,7 @@ const BlogCard: React.FC<BlogType> = ({ blogCard }) => {
                     <p className="font-medium text-gray-500">{blogCard.readingTime} Read</p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

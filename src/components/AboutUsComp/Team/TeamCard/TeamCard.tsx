@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 interface TeamType {
@@ -12,7 +13,7 @@ interface TeamType {
 
 const TeamCard: React.FC<TeamType> = ({ teamData }) => {
     return (
-        <div data-aos="fade-up" className=" group cursor-pointer">
+        <Link href={`/doctors/${teamData.id}`} data-aos="fade-up" className=" group cursor-pointer">
             <figure className="rounded-3xl bg-[#f5faff] h-96 overflow-hidden">
                 <Image className="w-full h-full" src={teamData.imageUrl} height={850} width={450} alt={teamData.name} />
             </figure>
@@ -25,7 +26,7 @@ const TeamCard: React.FC<TeamType> = ({ teamData }) => {
                 </div>
                 <h4 className="text-gray-500 text-lg font-semibold">{teamData.deg}</h4>
             </div>
-        </div>
+        </Link>
     );
 };
 
