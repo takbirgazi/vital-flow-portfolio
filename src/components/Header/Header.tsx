@@ -29,7 +29,7 @@ const Header = () => {
         }
     ]
     return (
-        <nav className="bg-white p-4 z-40 fixed w-full">
+        <nav className="bg-white py-4 z-40 fixed w-full">
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link href="/" className="flex gap-1 items-center">
                     <figure>

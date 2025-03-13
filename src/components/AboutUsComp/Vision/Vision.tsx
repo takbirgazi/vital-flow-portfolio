@@ -11,7 +11,7 @@ const Vision = () => {
         "Transforming lives through medical excellence"
     ]
     return (
-        <div className="px-4 flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
+        <div className="flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
             <div data-aos="fade-up" className="w-full lg:w-1/2">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

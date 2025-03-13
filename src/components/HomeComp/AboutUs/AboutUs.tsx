@@ -14,7 +14,7 @@ const AboutUs = () => {
         });
     }, [])
     return (
-        <div data-aos="zoom-in-up" className="px-4 flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
+        <div data-aos="zoom-in-up" className="flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
             <div className="w-full lg:w-1/2">
                 <figure className="rounded-3xl overflow-hidden">
                     <Image className="w-full h-full" src="https://framerusercontent.com/images/xolhj23w9rvPPDhG1vbAIr7CyM.jpg" alt="Second Image" height={650} width={650} />

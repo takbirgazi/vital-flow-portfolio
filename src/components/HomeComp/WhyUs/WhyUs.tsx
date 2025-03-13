@@ -17,7 +17,7 @@ const WhyUs = () => {
     }, [])
 
     return (
-        <div data-aos="zoom-in-up" className="px-4 flex flex-col lg:flex-row gap-4 justify-between my-5 pb-16">
+        <div data-aos="zoom-in-up" className="flex flex-col lg:flex-row gap-4 justify-between my-5 pb-16">
             <div className="w-full lg:w-1/2">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
