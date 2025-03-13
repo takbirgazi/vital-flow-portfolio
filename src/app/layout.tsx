@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import 'aos/dist/aos.css';
+import SmoothScrollWrapper from './SmoothScrollWrapper';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <SmoothScrollWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </SmoothScrollWrapper>
       </body>
     </html>
   );
