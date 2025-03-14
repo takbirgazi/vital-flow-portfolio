@@ -39,7 +39,7 @@ const Header = () => {
                 </Link>
                 <div className="hidden md:flex justify-center items-center gap-4">
                     {
-                        links.map(menu => <Link className="font-bold text-gray-800" href={menu.slag} key={menu.id}>{menu.title}</Link>)
+                        links.map(menu => <Link className="font-semibold text-gray-800" href={menu.slag} key={menu.id}>{menu.title}</Link>)
                     }
                 </div>
                 <div className="hidden md:flex justify-center items-center">

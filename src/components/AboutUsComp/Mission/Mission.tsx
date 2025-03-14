@@ -16,9 +16,14 @@ const Mission = () => {
     return (
         <div className="flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
             <div data-aos="fade-up" className="w-full lg:w-1/2">
-                <figure className="rounded-3xl overflow-hidden">
-                    <Image className="w-full h-full" src="https://framerusercontent.com/images/xolhj23w9rvPPDhG1vbAIr7CyM.jpg" alt="Second Image" height={650} width={650} />
-                </figure>
+                <div className="flex gap-0 items-end">
+                    <figure className="rounded-full w-60 h-[350px] overflow-hidden -mr-16 z-10">
+                        <Image className="w-full h-full" src="https://framerusercontent.com/images/775gBfSIgsV9BsQVS9uQeG2Hw.webp?scale-down-to=1024" alt="Second Image" height={650} width={650} />
+                    </figure>
+                    <figure className="rounded-full w-72 h-[500px] overflow-hidden">
+                        <Image className="w-full h-full" src="https://framerusercontent.com/images/kTaEkg1clIFhpTMexsBCZv7CVbQ.webp?scale-down-to=1024" alt="Second Image" height={650} width={650} />
+                    </figure>
+                </div>
             </div>
             <div data-aos="fade-up" className="w-full lg:w-1/2">
                 <div className="flex items-center gap-2">
