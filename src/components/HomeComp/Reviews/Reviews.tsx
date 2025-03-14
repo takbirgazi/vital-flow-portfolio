@@ -14,7 +14,7 @@ const Reviews = () => {
     }, [])
 
     return (
-        <div data-aos="zoom-in-up" className="container mx-auto px-8 py-10 rounded-4xl bg-[#4586ff1a] my-5">
+        <div data-aos="zoom-in-up" className="container mx-auto max-w-[1200px] px-8 py-10 rounded-4xl bg-[#4586ff1a] my-5">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
                 <h2 className="text-xl lg:text-4xl text-gray-800 font-semibold">Virtual Consultation</h2>
                 <div className="flex flex-wrap gap-4 mt-3">

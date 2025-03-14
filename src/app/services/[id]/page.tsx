@@ -8,7 +8,7 @@ import CustomButton from "@/components/SharedComponent/CustomButton/CustomButton
 
 const page = () => {
     return (
-        <div className="pt-32 container mx-auto px-4">
+        <div className="pt-32 container mx-auto max-w-[1200px] px-4">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-4 pb-8">
                 <div className="w-full lg:w-1/2">
                     <div className="flex">

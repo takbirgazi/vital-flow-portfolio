@@ -86,7 +86,7 @@ const page = () => {
     ]
 
     return (
-        <div className="pt-32 container mx-auto pb-10 px-4">
+        <div className="pt-32 container mx-auto max-w-[1200px] pb-10 px-4">
             <div className="flex flex-col justify-center items-center mb-5">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

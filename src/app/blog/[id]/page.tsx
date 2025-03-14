@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
     return (
-        <div className="pt-32 container mx-auto pb-10 px-4">
+        <div className="pt-32 container mx-auto max-w-[1200px] pb-10 px-4">
             <div className="flex flex-col justify-center items-center mb-5">
                 <div className="flex items-center gap-2">
                     <p className="font-semibold text-lg text-gray-500">Sep 4, 2024</p>

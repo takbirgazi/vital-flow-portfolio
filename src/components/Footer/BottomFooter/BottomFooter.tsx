@@ -6,7 +6,7 @@ import CustomButton from "@/components/SharedComponent/CustomButton/CustomButton
 
 const BottomFooter = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto max-w-[1200px] px-4 py-8">
             <div className="flex flex-col lg:flex-row justify-between gap-4 py-4">
                 <div className="w-full lg:w-1/3">
                     <Link href="/" className="flex gap-1 items-center">

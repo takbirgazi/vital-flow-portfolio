@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const TopFooter = () => {
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-[1200px] px-4">
             <div className="flex flex-col md:flex-row justify-between py-10">
                 <div className="w-full lg:w-1/3">
                     <div className="flex items-center gap-2">

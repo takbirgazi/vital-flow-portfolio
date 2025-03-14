@@ -9,7 +9,7 @@ import CustomButton from "@/components/SharedComponent/CustomButton/CustomButton
 const page = () => {
     return (
         <div className="pt-32 pb-5">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 max-w-[1200px]">
                 <div className="flex flex-col justify-center items-center mb-5">
                     <div className="flex items-center gap-2">
                         <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

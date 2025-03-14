@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa"
 
 const page = () => {
     return (
-        <div className="pt-32 container mx-auto px-4">
+        <div className="pt-32 container mx-auto max-w-[1200px] px-4">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
                 <div className="w-full lg:w-2/5">
                     <figure className="rounded-3xl overflow-hidden bg-[#f5faff]">

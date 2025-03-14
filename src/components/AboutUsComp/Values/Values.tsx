@@ -34,7 +34,7 @@ const Values = () => {
     ]
     return (
         <div className='bg-[#f5faff] px-4 py-8 mb-10'>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto max-w-[1200px] px-4">
                 <div data-aos="fade-up" className="flex flex-col justify-center items-center mb-5">
                     <div className="flex items-center gap-2">
                         <span className="h-2 w-2 bg-primaryBg rounded-full"></span>

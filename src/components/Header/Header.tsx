@@ -30,7 +30,7 @@ const Header = () => {
     ]
     return (
         <nav className="bg-white py-4 z-40 fixed w-full">
-            <div className="container mx-auto px-4 flex justify-between items-center">
+            <div className="container mx-auto max-w-[1200px] px-4 flex justify-between items-center">
                 <Link href="/" className="flex gap-1 items-center">
                     <figure>
                         <Image className="h-10 w-10" src={logo} height={200} width={200} alt="Logo" />

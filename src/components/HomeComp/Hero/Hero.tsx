@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
                     <p className="font-semibold text-gray-800">5.0 (980 Reviews)</p>
                 </div>
-                <h2 className="text-4xl lg:text-6xl font-bold pr-8">Partner in health and wellness</h2>
+                <h2 className="text-4xl lg:text-6xl font-semibold pr-8">Partner in health and wellness</h2>
                 <p className="text-lg text-gray-600 font-semibold max-w-96">Providing advanced healthcare solutions with a compassionate touch for every patient.</p>
                 <div className="flex flex-wrap items-center gap-4">
                     <CustomButton link="/" title="Book a call" />

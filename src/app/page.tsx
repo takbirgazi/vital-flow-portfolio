@@ -11,7 +11,7 @@ import Works from "@/components/HomeComp/Works/Works";
 
 export default function Home() {
   return (
-    <div className="pt-20 container mx-auto px-4">
+    <div className="pt-20 container mx-auto px-4 max-w-[1200px]">
       <Hero />
       <Reviews />
       <WhyUs />
