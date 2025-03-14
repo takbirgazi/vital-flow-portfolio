@@ -32,7 +32,7 @@ const BlogCard: React.FC<BlogType> = ({ blogCard }) => {
                     <Image className="w-full h-full group-hover:scale-110 object-cover transition-all duration-700" height={750} width={950} src={blogCard.imageUrl} alt={blogCard.title} />
                 </figure>
             </div>
-            <h2 className="py-5 text-3xl font-semibold text-gray-800">{blogCard.title}</h2>
+            <h2 className="py-5 text-2xl lg:text-3xl font-semibold text-gray-800">{blogCard.title}</h2>
             <div className="border-t border-gray-200 py-5 flex items-center gap-3">
                 <div className="flex items-center gap-2">
                     <FaCalendarAlt className="text-primaryBg" />

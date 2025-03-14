@@ -98,7 +98,7 @@ const page = () => {
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Blog</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[550px] py-5">Insights and tips for better healthcare decisions</h2>
+                <h2 className="text-4xl font-semibold text-center max-w-[550px] py-5">Insights and tips for better healthcare decisions</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
                 {
@@ -110,7 +110,7 @@ const page = () => {
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Testimonials</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[550px] py-5">What our satisfied and happy clients have to say</h2>
+                <h2 className="text-4xl font-semibold text-center max-w-[550px] py-5">What our satisfied and happy clients have to say</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
                 {

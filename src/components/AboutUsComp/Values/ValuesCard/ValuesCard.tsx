@@ -17,7 +17,7 @@ const ValuesCard: React.FC<ValueType> = ({ valueData }) => {
             </figure>
             <div className="pt-10">
                 <h2 className="font-semibold text-white text-3xl pb-3">{valueData.title}</h2>
-                <p className="font-semibold text-white">{valueData.desc}</p>
+                <p className="font-medium text-white">{valueData.desc}</p>
             </div>
         </div>
     );

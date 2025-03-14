@@ -58,7 +58,7 @@ const Team = () => {
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Team</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[550px] py-5">Meet our dedicated and experienced team</h2>
+                <h2 className="text-4xl font-semibold text-center max-w-[550px] py-5">Meet our dedicated and experienced team</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
                 {

@@ -31,10 +31,10 @@ const ServiceCard: React.FC<ServiceType> = ({ serviceCard }) => {
                 </figure>
             </div>
             <div className="pt-5">
-                <h4 className="font-bold text-lg text-center">{serviceCard.title}</h4>
+                <h4 className="font-semibold text-lg text-center">{serviceCard.title}</h4>
             </div>
             <div className="py-3">
-                <p className="font-bold text-center text-gray-500 max-w-72 mx-auto">{serviceCard.desc}</p>
+                <p className="font-semibold text-center text-gray-500 max-w-72 mx-auto">{serviceCard.desc}</p>
             </div>
             <div className="flex gap-2 group-hover:gap-4 transition-all duration-300 justify-center items-center">
                 <p className="text-gray-800 font-semibold text-center">View Services</p>

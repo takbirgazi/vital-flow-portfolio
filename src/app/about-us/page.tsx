@@ -15,7 +15,7 @@ const page = () => {
                         <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                         <p className="font-semibold text-gray-800">About us</p>
                     </div>
-                    <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[550px] py-5">A modern dental care home for families</h2>
+                    <h2 className="text-4xl font-semibold text-center max-w-[550px] py-5">A modern dental care home for families</h2>
                     <CustomButton link="/" title="Get Started" />
                 </div>
                 <Feature />

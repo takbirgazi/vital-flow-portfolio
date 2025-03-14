@@ -31,7 +31,7 @@ const Hero = () => {
                     <p className="font-semibold text-gray-800">5.0 (980 Reviews)</p>
                 </div>
                 <h2 className="text-4xl lg:text-6xl font-semibold pr-8">Partner in health and wellness</h2>
-                <p className="text-lg text-gray-600 font-semibold max-w-96">Providing advanced healthcare solutions with a compassionate touch for every patient.</p>
+                <p className="text-base lg:text-lg text-gray-600 font-semibold max-w-96">Providing advanced healthcare solutions with a compassionate touch for every patient.</p>
                 <div className="flex flex-wrap items-center gap-4">
                     <CustomButton link="/" title="Book a call" />
                     <div className="hover:scale-95 rounded-full font-medium font-sans overflow-hidden transition-transform duration-300 flex items-center gap-2 cursor-pointer">
@@ -55,7 +55,7 @@ const Hero = () => {
                         </Avatar>
                     </div>
                     <div className="pb-5">
-                        <p className="font-medium text-gray-800 text-sm md:text-lg">5000+ Appointments</p>
+                        <p className="font-medium text-gray-800 text-base md:text-lg">5000+ Appointments</p>
                         <p className="text-xs md:text-sm text-gray-500 font-medium">Patients booked already</p>
                     </div>
                 </div>

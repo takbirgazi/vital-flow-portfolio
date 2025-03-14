@@ -66,13 +66,13 @@ const page = () => {
                 </div>
                 <div className="w-full lg:w-2/3">
                     <h2 className="text-4xl font-semibold pb-4">About service:</h2>
-                    <p className="text-gray-500 text-lg font-semibold">Our orthopaedics department specializes in diagnosing and treating musculoskeletal conditions, ensuring mobility and quality of life. From fractures to joint replacements, we provide advanced care tailored to your specific needs. <br /> <br /> Equipped with modern facilities and expert surgeons, we offer effective solutions for sports injuries, arthritis, and other orthopedic challenges. Your recovery and long-term health are our utmost priority.</p>
+                    <p className="text-gray-600 text-base lg:text-lg leading-7 font-semibold">Our orthopaedics department specializes in diagnosing and treating musculoskeletal conditions, ensuring mobility and quality of life. From fractures to joint replacements, we provide advanced care tailored to your specific needs. <br /> <br /> Equipped with modern facilities and expert surgeons, we offer effective solutions for sports injuries, arthritis, and other orthopedic challenges. Your recovery and long-term health are our utmost priority.</p>
                     <ul className="pt-4 pl-5.5">
-                        <li className="list-disc text-gray-500 text-lg font-semibold pb-2">Advanced diagnostic imaging and musculoskeletal assessments.</li>
-                        <li className="list-disc text-gray-500 text-lg font-semibold pb-2">Surgical and non-surgical treatment options for fractures, dislocations, and other injuries.</li>
-                        <li className="list-disc text-gray-500 text-lg font-semibold pb-2">Specialized care for joint disorders, including arthritis and tendonitis.</li>
-                        <li className="list-disc text-gray-500 text-lg font-semibold pb-2">Comprehensive rehabilitation and physical therapy programs.</li>
-                        <li className="list-disc text-gray-500 text-lg font-semibold pb-2">Preventive care and education to support long-term musculoskeletal health.</li>
+                        <li className="list-disc text-gray-600 text-base lg:text-lg leading-7 font-semibold pb-2">Advanced diagnostic imaging and musculoskeletal assessments.</li>
+                        <li className="list-disc text-gray-600 text-base lg:text-lg leading-7 font-semibold pb-2">Surgical and non-surgical treatment options for fractures, dislocations, and other injuries.</li>
+                        <li className="list-disc text-gray-600 text-base lg:text-lg leading-7 font-semibold pb-2">Specialized care for joint disorders, including arthritis and tendonitis.</li>
+                        <li className="list-disc text-gray-600 text-base lg:text-lg leading-7 font-semibold pb-2">Comprehensive rehabilitation and physical therapy programs.</li>
+                        <li className="list-disc text-gray-600 text-base lg:text-lg leading-7 font-semibold pb-2">Preventive care and education to support long-term musculoskeletal health.</li>
                     </ul>
                 </div>
             </div>

@@ -11,13 +11,13 @@ const Vision = () => {
         "Transforming lives through medical excellence"
     ]
     return (
-        <div className="flex gap-8 justify-between flex-col lg:flex-row my-10 pt-5">
+        <div className="flex gap-8 justify-between flex-col-reverse lg:flex-row my-10 pt-5">
             <div data-aos="fade-up" className="w-full lg:w-1/2">
                 <div className="flex items-center gap-2">
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Our Vision</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold max-w-[450px] py-5">Passionate about creating healthier, happier lives</h2>
+                <h2 className="text-4xl font-semibold max-w-[450px] py-5">Passionate about creating healthier, happier lives</h2>
                 <div className='py-4'>
                     {
                         visionList.map((data, ind) => <div key={ind} className='flex gap-2 items-center py-2'>

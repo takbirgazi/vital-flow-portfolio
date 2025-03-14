@@ -16,7 +16,7 @@ const Reviews = () => {
     return (
         <div data-aos="zoom-in-up" className="container mx-auto max-w-[1200px] px-8 py-10 rounded-4xl bg-[#4586ff1a] my-5">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
-                <h2 className="text-xl lg:text-4xl text-gray-800 font-semibold">Virtual Consultation</h2>
+                <h2 className="text-2xl lg:text-4xl text-gray-800 font-semibold">Virtual Consultation</h2>
                 <div className="flex flex-wrap gap-4 mt-3">
                     <div className="flex gap-0.5">
                         <FaStar className="text-[#fec01d] text-xl" />
@@ -50,7 +50,7 @@ const Reviews = () => {
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
                 <h2 className="text-4xl lg:text-6xl font-semibold">200K+</h2>
-                <p className="max-w-52 font-semibold text-gray-600">Cured satisfied patients around the globe</p>
+                <p className="lg:max-w-52 w-full font-semibold text-gray-600">Cured satisfied patients around the globe</p>
             </div>
         </div>
     );

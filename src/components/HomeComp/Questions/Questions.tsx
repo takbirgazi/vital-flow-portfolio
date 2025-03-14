@@ -46,7 +46,7 @@ const Questions = () => {
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">FAQ&lsquo;s</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold text-center max-w-[550px] py-5">Frequently asked questions for quick answers</h2>
+                <h2 className="text-4xl font-semibold text-center max-w-[550px] py-5">Frequently asked questions for quick answers</h2>
             </div>
             <div className="max-w-5xl mx-auto px-4">
                 <QuestionsAccordion questionAnsData={qusetionAns} />

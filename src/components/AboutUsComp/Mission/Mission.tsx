@@ -25,7 +25,7 @@ const Mission = () => {
                     <span className="h-2 w-2 bg-primaryBg rounded-full"></span>
                     <p className="font-semibold text-gray-800">Our Mission</p>
                 </div>
-                <h2 className="text-xl lg:text-4xl font-bold max-w-[450px] py-5">Transforming lives with  medical solutions</h2>
+                <h2 className="text-4xl font-semibold max-w-[450px] py-5">Transforming lives with  medical solutions</h2>
                 <div className="flex flex-col gap-6">
                     <div className="flex gap-4">
                         <div className="flex justify-center">
